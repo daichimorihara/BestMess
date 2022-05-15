@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4218876A28310E4D00DB050F /* WeakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218876928310E4D00DB050F /* WeakView.swift */; };
 		4267CB01282FB07600A491D3 /* SubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4267CB00282FB07600A491D3 /* SubscriberView.swift */; };
 		428B8F4F282E561900D781A7 /* BestMessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428B8F4E282E561900D781A7 /* BestMessApp.swift */; };
 		428B8F51282E561900D781A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428B8F50282E561900D781A7 /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4218876928310E4D00DB050F /* WeakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakView.swift; sourceTree = "<group>"; };
 		4267CB00282FB07600A491D3 /* SubscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberView.swift; sourceTree = "<group>"; };
 		428B8F4B282E561900D781A7 /* BestMess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestMess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		428B8F4E282E561900D781A7 /* BestMessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestMessApp.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				428B8F52282E561A00D781A7 /* Assets.xcassets */,
 				428B8F54282E561A00D781A7 /* Preview Content */,
 				4267CB00282FB07600A491D3 /* SubscriberView.swift */,
+				4218876928310E4D00DB050F /* WeakView.swift */,
 			);
 			path = BestMess;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4218876A28310E4D00DB050F /* WeakView.swift in Sources */,
 				4267CB01282FB07600A491D3 /* SubscriberView.swift in Sources */,
 				428B8F51282E561900D781A7 /* ContentView.swift in Sources */,
 				428B8F4F282E561900D781A7 /* BestMessApp.swift in Sources */,
