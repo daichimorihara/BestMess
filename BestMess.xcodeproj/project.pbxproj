@@ -26,6 +26,7 @@
 		428B8F51282E561900D781A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428B8F50282E561900D781A7 /* ContentView.swift */; };
 		428B8F53282E561A00D781A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428B8F52282E561A00D781A7 /* Assets.xcassets */; };
 		428B8F56282E561A00D781A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428B8F55282E561A00D781A7 /* Preview Assets.xcassets */; };
+		42BBA036285DB99400013D8F /* TaskCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BBA035285DB99400013D8F /* TaskCamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		428B8F50282E561900D781A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		428B8F52282E561A00D781A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		428B8F55282E561A00D781A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		42BBA035285DB99400013D8F /* TaskCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				428B8F50282E561900D781A7 /* ContentView.swift */,
 				422D6DBF283BA74A001E497C /* InitTest.swift */,
 				4244BD4F2844CEF600245B96 /* CoreDataCamp.swift */,
+				42BBA035285DB99400013D8F /* TaskCamp.swift */,
 			);
 			path = Mess;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				4244BD532844CF9500245B96 /* FruitsContainer.xcdatamodeld in Sources */,
 				4218876A28310E4D00DB050F /* WeakView.swift in Sources */,
 				424D6A8728336E9E00DCCB05 /* ProfilePictureViewModel.swift in Sources */,
+				42BBA036285DB99400013D8F /* TaskCamp.swift in Sources */,
 				42273BAC283240930043DA25 /* DownloadWithCombine.swift in Sources */,
 				4267CB01282FB07600A491D3 /* SubscriberView.swift in Sources */,
 				428B8F51282E561900D781A7 /* ContentView.swift in Sources */,
