@@ -26,7 +26,10 @@
 		428B8F51282E561900D781A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428B8F50282E561900D781A7 /* ContentView.swift */; };
 		428B8F53282E561A00D781A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428B8F52282E561A00D781A7 /* Assets.xcassets */; };
 		428B8F56282E561A00D781A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428B8F55282E561A00D781A7 /* Preview Assets.xcassets */; };
+		4295777A2866EBE600515827 /* AsyncLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429577792866EBE600515827 /* AsyncLet.swift */; };
+		4295777C28670E1700515827 /* TaskGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295777B28670E1700515827 /* TaskGroup.swift */; };
 		42BBA036285DB99400013D8F /* TaskCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BBA035285DB99400013D8F /* TaskCamp.swift */; };
+		42DCFED3286D601F004BE463 /* AsyncCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DCFED2286D601F004BE463 /* AsyncCall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +53,10 @@
 		428B8F50282E561900D781A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		428B8F52282E561A00D781A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		428B8F55282E561A00D781A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		429577792866EBE600515827 /* AsyncLet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLet.swift; sourceTree = "<group>"; };
+		4295777B28670E1700515827 /* TaskGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroup.swift; sourceTree = "<group>"; };
 		42BBA035285DB99400013D8F /* TaskCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCamp.swift; sourceTree = "<group>"; };
+		42DCFED2286D601F004BE463 /* AsyncCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,9 @@
 				422D6DBF283BA74A001E497C /* InitTest.swift */,
 				4244BD4F2844CEF600245B96 /* CoreDataCamp.swift */,
 				42BBA035285DB99400013D8F /* TaskCamp.swift */,
+				429577792866EBE600515827 /* AsyncLet.swift */,
+				4295777B28670E1700515827 /* TaskGroup.swift */,
+				42DCFED2286D601F004BE463 /* AsyncCall.swift */,
 			);
 			path = Mess;
 			sourceTree = "<group>";
@@ -232,6 +241,7 @@
 				424D6A8728336E9E00DCCB05 /* ProfilePictureViewModel.swift in Sources */,
 				42BBA036285DB99400013D8F /* TaskCamp.swift in Sources */,
 				42273BAC283240930043DA25 /* DownloadWithCombine.swift in Sources */,
+				42DCFED3286D601F004BE463 /* AsyncCall.swift in Sources */,
 				4267CB01282FB07600A491D3 /* SubscriberView.swift in Sources */,
 				428B8F51282E561900D781A7 /* ContentView.swift in Sources */,
 				424D6A8B2833908500DCCB05 /* PhotoModelFileManager.swift in Sources */,
@@ -239,7 +249,9 @@
 				424D6A7F2833423000DCCB05 /* PhotoModelDataService.swift in Sources */,
 				424D6A732833405B00DCCB05 /* DownloadImageView.swift in Sources */,
 				424D6A8528336E6600DCCB05 /* ProfilePictureView.swift in Sources */,
+				4295777C28670E1700515827 /* TaskGroup.swift in Sources */,
 				424D6A7D2833417500DCCB05 /* DonwloadImageViewModel.swift in Sources */,
+				4295777A2866EBE600515827 /* AsyncLet.swift in Sources */,
 				428B8F4F282E561900D781A7 /* BestMessApp.swift in Sources */,
 				422D6DC0283BA74A001E497C /* InitTest.swift in Sources */,
 				424D6A8128336CE500DCCB05 /* DownloadImageRowView.swift in Sources */,
