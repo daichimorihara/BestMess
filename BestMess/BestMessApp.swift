@@ -11,7 +11,7 @@ import SwiftUI
 struct BestMessApp: App {
     var body: some Scene {
         WindowGroup {
-            TaskHomeView()
+            DetailView()
         }
     }
 }
