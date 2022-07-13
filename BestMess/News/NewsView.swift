@@ -12,7 +12,12 @@ struct NewsView: View {
     @StateObject var vm = NewsViewModel()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            Text(vm.news?.status ?? "Error")
+        }
+        .onAppear {
+            vm.fetchNews()
+        }
     }
 }
 
