@@ -13,11 +13,15 @@ struct NewsView: View {
     
     var body: some View {
         ScrollView {
-            Text(vm.news?.status ?? "Error")
+            Text("NEGOI")
+            ForEach(vm.articles) { news in
+                Text(news.title)
+            }
         }
         .onAppear {
             vm.fetchNews()
         }
+       
     }
 }
 

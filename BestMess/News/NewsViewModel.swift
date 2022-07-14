@@ -9,24 +9,17 @@ import Foundation
 
 @MainActor
 class NewsViewModel: ObservableObject {
-    @Published var articles = [Article]()
+
     
-    @Published var messages = [Message]()
+    @Published var articles = [News]()
+    let service = NewsService()
     
-    @Published var news: NewsModel?
-    
-    let newsService = NewsService()
-    
-//    func fetchArticles() async {
-//        if let returnedArticles = try? await newsService.fetchNews() {
-//            articles = returnedArticles
-//        }
-//    }
-    
-    func fetchNews() {
-        news = newsService.hufsi()
+    func fetchNews()  {
+        if let news = try? service.fetchNews() {
+            articles = news
+        }
+            
     }
-    
 
     
 
