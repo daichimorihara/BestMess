@@ -15,13 +15,12 @@ struct NewsView: View {
         ScrollView {
             Text("NEGOI")
             ForEach(vm.articles) { news in
-                Text(news.title)
+                Text(news.title ?? "e")
             }
         }
-        .onAppear {
-            vm.fetchNews()
+        .task {
+            await vm.downloadNews()
         }
-       
     }
 }
 

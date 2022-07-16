@@ -17,6 +17,11 @@
 		42291313287D8DB300180542 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42291312287D8DB300180542 /* NewsViewModel.swift */; };
 		42291315287D8DC400180542 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42291314287D8DC400180542 /* NewsView.swift */; };
 		422D6DC0283BA74A001E497C /* InitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D6DBF283BA74A001E497C /* InitTest.swift */; };
+		4244259A2882C11F00BD3B14 /* NewsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424425992882C11F00BD3B14 /* NewsRow.swift */; };
+		4244259C2882C62100BD3B14 /* NewsImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4244259B2882C62100BD3B14 /* NewsImageCacheManager.swift */; };
+		424425A02882CE1C00BD3B14 /* NewsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4244259F2882CE1C00BD3B14 /* NewsImageView.swift */; };
+		424425A22882CEF200BD3B14 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424425A12882CEF200BD3B14 /* PhotoService.swift */; };
+		424425AD2882D0AE00BD3B14 /* NewsImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424425AC2882D0AE00BD3B14 /* NewsImageViewModel.swift */; };
 		4244BD502844CEF600245B96 /* CoreDataCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4244BD4F2844CEF600245B96 /* CoreDataCamp.swift */; };
 		4244BD532844CF9500245B96 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4244BD512844CF9500245B96 /* FruitsContainer.xcdatamodeld */; };
 		424D6A732833405B00DCCB05 /* DownloadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424D6A722833405B00DCCB05 /* DownloadImageView.swift */; };
@@ -60,6 +65,11 @@
 		42291312287D8DB300180542 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		42291314287D8DC400180542 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		422D6DBF283BA74A001E497C /* InitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitTest.swift; sourceTree = "<group>"; };
+		424425992882C11F00BD3B14 /* NewsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRow.swift; sourceTree = "<group>"; };
+		4244259B2882C62100BD3B14 /* NewsImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsImageCacheManager.swift; sourceTree = "<group>"; };
+		4244259F2882CE1C00BD3B14 /* NewsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsImageView.swift; sourceTree = "<group>"; };
+		424425A12882CEF200BD3B14 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		424425AC2882D0AE00BD3B14 /* NewsImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsImageViewModel.swift; sourceTree = "<group>"; };
 		4244BD4F2844CEF600245B96 /* CoreDataCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataCamp.swift; sourceTree = "<group>"; };
 		4244BD522844CF9500245B96 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
 		424D6A722833405B00DCCB05 /* DownloadImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageView.swift; sourceTree = "<group>"; };
@@ -116,12 +126,57 @@
 		4229130F287D89E800180542 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				42291310287D8D6D00180542 /* NewsService.swift */,
-				42291312287D8DB300180542 /* NewsViewModel.swift */,
-				42291314287D8DC400180542 /* NewsView.swift */,
-				42FC1FFF287E7051008786C4 /* NewsModel.swift */,
+				424425A72882CF9900BD3B14 /* Manager */,
+				424425A62882CF8300BD3B14 /* Component */,
+				424425A52882CF5E00BD3B14 /* NewsSection */,
+				424425A42882CF5200BD3B14 /* Model */,
+				424425A32882CF3800BD3B14 /* Service */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		424425A32882CF3800BD3B14 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				42291310287D8D6D00180542 /* NewsService.swift */,
+				424425A12882CEF200BD3B14 /* PhotoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		424425A42882CF5200BD3B14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42FC1FFF287E7051008786C4 /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		424425A52882CF5E00BD3B14 /* NewsSection */ = {
+			isa = PBXGroup;
+			children = (
+				42291314287D8DC400180542 /* NewsView.swift */,
+				42291312287D8DB300180542 /* NewsViewModel.swift */,
+			);
+			path = NewsSection;
+			sourceTree = "<group>";
+		};
+		424425A62882CF8300BD3B14 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				4244259F2882CE1C00BD3B14 /* NewsImageView.swift */,
+				424425992882C11F00BD3B14 /* NewsRow.swift */,
+				424425AC2882D0AE00BD3B14 /* NewsImageViewModel.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		424425A72882CF9900BD3B14 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4244259B2882C62100BD3B14 /* NewsImageCacheManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		424D6A74283340A300DCCB05 /* Mess */ = {
@@ -312,7 +367,10 @@
 				427120632874037100E57D3F /* NewStory.swift in Sources */,
 				4229130C287D883800180542 /* WebUIView.swift in Sources */,
 				424D6A8928338F5900DCCB05 /* PhotoModelCacheManager.swift in Sources */,
+				424425AD2882D0AE00BD3B14 /* NewsImageViewModel.swift in Sources */,
 				4244BD502844CEF600245B96 /* CoreDataCamp.swift in Sources */,
+				424425A02882CE1C00BD3B14 /* NewsImageView.swift in Sources */,
+				4244259A2882C11F00BD3B14 /* NewsRow.swift in Sources */,
 				42AC2632287AE22300392998 /* ChartView.swift in Sources */,
 				4244BD532844CF9500245B96 /* FruitsContainer.xcdatamodeld in Sources */,
 				4218876A28310E4D00DB050F /* WeakView.swift in Sources */,
@@ -341,10 +399,12 @@
 				4295777C28670E1700515827 /* TaskGroup.swift in Sources */,
 				424D6A7D2833417500DCCB05 /* DonwloadImageViewModel.swift in Sources */,
 				4295777A2866EBE600515827 /* AsyncLet.swift in Sources */,
+				424425A22882CEF200BD3B14 /* PhotoService.swift in Sources */,
 				428B8F4F282E561900D781A7 /* BestMessApp.swift in Sources */,
 				422D6DC0283BA74A001E497C /* InitTest.swift in Sources */,
 				42AC262A287AE17F00392998 /* ChartModel.swift in Sources */,
 				42291313287D8DB300180542 /* NewsViewModel.swift in Sources */,
+				4244259C2882C62100BD3B14 /* NewsImageCacheManager.swift in Sources */,
 				42AC2634287AE27400392998 /* Double.swift in Sources */,
 				424D6A8128336CE500DCCB05 /* DownloadImageRowView.swift in Sources */,
 			);

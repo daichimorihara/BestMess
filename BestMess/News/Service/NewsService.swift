@@ -9,21 +9,51 @@ import Foundation
 
 class NewsService {
     
-    func fetchNews() throws -> [News] {
-        let data = Data(JsonData.data.utf8)
+    func downloadNews() async throws -> [Article] {
+        let urlStr = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=ff6783860dff4ae6a3479600f7c66a65"
         
+        guard let url = URL(string: urlStr) else {
+            throw URLError(.badURL)
+        }
         do {
-            print(data)
-            
-            return try JSONDecoder().decode(NewsResponse.self, from: data).data
-        } catch  {
-            print(data)
-            print(error)
+            let (data, _) = try await URLSession.shared.data(from: url)
+            if let deco = try? JSONDecoder().decode(Response.self, from: data).articles {
+                print(deco)
+                return deco
+            } else {
+                return [Article(title: "a", url: nil, urlToImage: nil)]
+            }
+        } catch {
             throw error
         }
+        
+        
     }
-
- 
+    
+//    func fetchNews() throws -> [News] {
+//        guard let data = readLocal(name: "News/data") else {
+//            print("Ohch")
+//            throw URLError(.badURL)
+//
+//        }
+//        do {
+//            print(data)
+//            return try JSONDecoder().decode(NewsResponse.self, from: data).data
+//        } catch  {
+//            print(error)
+//            throw error
+//        }
+//    }
+//
+//    func readLocal(name: String) -> Data? {
+//
+//        if let bundledPath = Bundle.main.path(forResource: name, ofType: "txt"),
+//           let jsonData = try? String(contentsOfFile: bundledPath).data(using: .utf8) {
+//            return jsonData
+//        } else {
+//            return nil
+//        }
+//    }
 }
 
 // https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=ff6783860dff4ae6a3479600f7c66a65
